@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AHMAT — boutique et services numériques au Tchad.">
+<title>AHMAT — Boutique & Services</title>
+<style>
+:root{--navy:#082c55;--blue:#145da0;--gold:#ffc857;--bg:#f4f7fb;--ink:#142235;--muted:#5d6b7b}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;padding:22px 16px 30px}
+nav{max-width:1050px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{font-size:1.7rem;font-weight:900;letter-spacing:2px}.tag{font-size:.9rem;color:#e1efff}
+nav a{color:white;text-decoration:none;margin-left:12px;font-size:.95rem}
+.hero{max-width:1050px;margin:30px auto 0;display:grid;grid-template-columns:1.4fr 1fr;gap:20px;align-items:center}
+.hero h1{font-size:clamp(2rem,6vw,3.3rem);line-height:1.08;margin:0 0 12px}
+.hero p{color:#e4efff;max-width:560px}.pill{display:inline-block;background:var(--gold);color:#142235;padding:8px 13px;border-radius:999px;font-weight:bold;font-size:.85rem}
+.hero-card{background:#ffffff15;border:1px solid #ffffff40;border-radius:18px;padding:22px}
+.hero-card strong{font-size:1.2rem}.hero-card li{margin:8px 0}
+main{max-width:1050px;margin:25px auto;padding:0 16px}
+.section-title{margin:28px 0 6px;font-size:1.7rem}.sub{color:var(--muted);margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:white;border:1px solid #e2e8f0;border-radius:16px;padding:18px;box-shadow:0 5px 18px #0b24400b}
+.emoji{font-size:2rem}.card h3{margin:8px 0}.card p{color:var(--muted);font-size:.95rem}
+.btn{display:inline-block;background:var(--blue);color:white;text-decoration:none;border:0;border-radius:10px;padding:11px 15px;font-weight:bold;cursor:pointer}
+.btn.gold{background:var(--gold);color:#172235}.notice{background:#fff7df;border:1px solid #f4d98b;padding:14px;border-radius:12px;margin:20px 0}
+form{display:grid;gap:10px}input,select,textarea{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:10px;font:inherit;background:white}
+footer{background:#071f3b;color:#d8e8f8;margin-top:40px;padding:24px 16px}footer .inner{max-width:1050px;margin:auto}
+.small{font-size:.85rem;color:var(--muted)}.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.contact{grid-template-columns:1fr}nav a{margin:0 10px 0 0}}
+</style>
+</head>
+<body>
+<header>
+<nav><div><div class="brand">AHMAT</div><div class="tag">Boutique • Services • Solutions numériques</div></div>
+<div><a href="#activites">Activités</a><a href="#commande">Commander</a><a href="#contact">Contact</a></div></nav>
+<section class="hero">
+<div><span class="pill">Bienvenue chez AHMAT</span><h1>Tout ce qu'il te faut, au même endroit.</h1>
+<p>Découvre nos produits et services : gaming, téléphonie, accessoires, boutique et assistance numérique. Contacte-nous pour connaître les disponibilités et les prix.</p>
+<a class="btn gold" href="#activites">Découvrir nos activités</a></div>
+<div class="hero-card"><strong>Pourquoi choisir AHMAT ?</strong><ul><li>Un contact direct avec le vendeur</li><li>Des prix annoncés avant toute commande</li><li>Un service accessible depuis ton téléphone</li><li>Des commandes confirmées manuellement</li></ul></div>
+</section></header>
+<main>
+<section id="activites"><h2 class="section-title">Nos activités</h2><p class="sub">Choisis une catégorie pour nous demander les informations.</p>
+<div class="grid">
+<article class="card"><div class="emoji">🎮</div><h3>Gaming</h3><p>Services liés aux jeux, eFootball et PUBG Mobile. Disponibilité et prix à confirmer avant paiement.</p><a class="btn order" href="#commande" data-service="Gaming">Demander les prix</a></article>
+<article class="card"><div class="emoji">📱</div><h3>Téléphonie</h3><p>Crédit téléphonique et renseignements sur les services mobiles disponibles.</p><a class="btn order" href="#commande" data-service="Téléphonie">Demander les prix</a></article>
+<article class="card"><div class="emoji">👕</div><h3>Vêtements & accessoires</h3><p>Maillots, vêtements, coques et accessoires selon le stock disponible.</p><a class="btn order" href="#commande" data-service="Vêtements et accessoires">Demander les prix</a></article>
+<article class="card"><div class="emoji">💻</div><h3>Services numériques</h3><p>Aide à la création de visuels, affiches, fiches de prix et présence en ligne.</p><a class="btn order" href="#commande" data-service="Services numériques">Demander les prix</a></article>
+<article class="card"><div class="emoji">🛍️</div><h3>Boutique générale</h3><p>Présente ici les autres produits que tu proposes. Les prix et le stock seront ajoutés après validation.</p><a class="btn order" href="#commande" data-service="Boutique générale">Demander les prix</a></article>
+<article class="card"><div class="emoji">🤝</div><h3>Commandes spéciales</h3><p>Tu recherches un produit ou un service particulier ? Envoie une demande.</p><a class="btn order" href="#commande" data-service="Commande spéciale">Faire une demande</a></article>
+</div></section>
+<section id="commande"><h2 class="section-title">Demande de commande</h2><p class="sub">Le formulaire prépare un message WhatsApp. Il ne prend pas de paiement directement.</p>
+<div class="contact"><div class="card"><form id="orderForm">
+<label>Ton nom<input id="customer" placeholder="Ton prénom" required></label>
+<label>Activité<select id="service"><option>Gaming</option><option>Téléphonie</option><option>Vêtements et accessoires</option><option>Services numériques</option><option>Boutique générale</option><option>Commande spéciale</option></select></label>
+<label>Ce que tu veux<textarea id="details" rows="3" placeholder="Produit, quantité ou question" required></textarea></label>
+<label>Ton numéro (facultatif)<input id="phone" inputmode="tel" placeholder="Indicatif + numéro"></label>
+<button class="btn" type="submit">Préparer ma demande WhatsApp</button>
+<p class="small">Avant publication, remplace le numéro WhatsApp de démonstration dans le fichier par ton numéro professionnel au format international, sans + ni espaces.</p>
+</form></div>
+<div class="card" id="contact"><h3>Contact AHMAT</h3><p>Ajoute ici tes coordonnées réelles pour que les clients puissent te joindre.</p><p><strong>WhatsApp :</strong> à configurer</p><p><strong>Zone :</strong> Tchad</p><p><strong>Horaires :</strong> à compléter</p><div class="notice">Conseil : affiche uniquement les produits que tu peux fournir réellement. Confirme toujours le prix total, les frais et le délai avant que le client paie.</div></div></div>
+</section>
+<section><h2 class="section-title">Comment commander ?</h2><div class="grid"><div class="card"><div class="emoji">1️⃣</div><h3>Choisir</h3><p>Le client sélectionne une activité ou un produit.</p></div><div class="card"><div class="emoji">2️⃣</div><h3>Confirmer</h3><p>Vous confirmez le prix, la disponibilité et le mode de livraison.</p></div><div class="card"><div class="emoji">3️⃣</div><h3>Finaliser</h3><p>Le paiement se fait uniquement par un moyen sûr convenu avec le client.</p></div></div></section>
+</main>
+<footer><div class="inner"><strong>AHMAT</strong><p>Une boutique en ligne en construction.</p><p class="small" style="color:#b9cde2">Les activités, tarifs, coordonnées et modalités de livraison doivent être vérifiés et complétés par le propriétaire avant publication.</p>© <span id="year"></span> AHMAT</div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('.order').forEach(b=>b.addEventListener('click',()=>{document.getElementById('service').value=b.dataset.service;}));
+document.getElementById('orderForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const whatsappNumber='23500000000'; // À REMPLACER par le vrai numéro WhatsApp, format international sans + ni espaces
+ if(whatsappNumber==='23500000000'){alert('Le site doit être configuré avec ton vrai numéro WhatsApp avant de pouvoir envoyer une demande.');return;}
+ const msg=`Bonjour AHMAT ! Je m'appelle ${document.getElementById('customer').value}. Activité : ${document.getElementById('service').value}. Demande : ${document.getElementById('details').value}. Mon numéro : ${document.getElementById('phone').value||'non fourni'}. Merci de me confirmer le prix total et la disponibilité.`;
+ window.location.href='https://wa.me/'+whatsappNumber+'?text='+encodeURIComponent(msg);
+});
+</script>
+</body>
+</html>
